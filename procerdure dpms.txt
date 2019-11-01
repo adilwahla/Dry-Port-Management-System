@@ -1,0 +1,11 @@
+  //==============================-------------------procedures-----------===================================//
+///---------------------------INSERTION PROCEDURES-----------------------------////
+//---PERSON TABLE-----//
+create or replace 
+PROCEDURE  Insertion ( ab int,en varchar(20),var varchar(20), PhN int,ad_CNIC int ,p_id int)
+is 
+begin
+update Emplooy_t set employee_id =ab,empName =en,address =var,Phone_no =PhN ,port_id= p_id where admin_CNIC=ad_cnic;
+commit;
+end;
+s
